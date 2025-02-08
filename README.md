@@ -360,7 +360,3 @@ We welcome contributions to improve these mini-games!
 ## Contact
 
 For support, contact [Najlae](mailto:najlae.abarghache@etu.uae.ac.ma).
-
-The updated **System Components** section now includes detailed descriptions of the **NPC child classes** and their roles in each mini-game. This addition enhances the clarity of the system architecture and provides developers with a clear understanding of how NPCs will function within the **Math Reinforcement Mini-Games**. Below is a refined version of the section with some minor adjustments for consistency and readability:
-
----
