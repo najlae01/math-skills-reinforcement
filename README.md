@@ -19,7 +19,7 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 
 ## Market Math
 
-![Scene Reference Image](Market.png)
+![Scene Reference Image](images/Market.png)
 
 ### **Marketplace - 💰 Money Management**
 **🕹️ Gameplay Mechanics**: 
@@ -57,7 +57,7 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 
 ## Shape Builder
 
-![Scene Reference Image](Mechanic.png)
+![Scene Reference Image](images/Mechanic.png)
 
 ### **Mechanic - 📏 Geometry Puzzle**
 **🕹️ Gameplay Mechanics**: 
@@ -130,8 +130,8 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 
 ## Restaurant Rush
 
-![Restaurant Scene Reference Image](Restaurant.png)
-![Coffee Scene Reference Image](Coffee.png)
+![Restaurant Scene Reference Image](images/Restaurant.png)
+![Coffee Scene Reference Image](images/Coffee.png)
 
 ### **Restaurant / Coffee Shop - 🍕 Fractions & Decimals**
 **🕹️ Gameplay Mechanics**: 
@@ -169,7 +169,7 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 
 ## Math Hoops
 
-### **Basketball Court - 🏀 Quick Calculations**
+### **Basketball Court - 🏀 Quick Calculations (already in development as part of the course demonstration)**
 **🕹️ Gameplay Mechanics**: 
 - 🎯 **Goal**: Score baskets by solving quick math problems correctly.
 - 🛒 **Scenarios**: Each successful answer gives the player a chance to shoot. The difficulty of the problem and shot increases as the player progresses.
@@ -207,7 +207,7 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 
 ### ⚙️ **Existing Classes & Structures**
 
-![Class Diagram](class-diagram.png)
+![Class Diagram](images/class-diagram.png)
 
 - **`ANPC`**: Base class for non-playable characters (NPCs) that guide players.
 - **`UMathoriaGameInstance`, `UMathoriaPlayerProfile`, `AMathoriaPlayerState`**: Core player data and game management.
