@@ -227,49 +227,49 @@ For a detailed explanation of the class structure, please refer to the diagram a
 - **NPC Child Classes**:
 
    **1. `AMarketNPC` (Market Math Mini-Game)**
-      - **Role**: Represents shopkeepers and customers in the marketplace.
-      - **Attributes**:
-      - `ShopType`: The type of shop (e.g. bakery, clothing store).
-      - `CustomerRequest`: The math problem or purchase request the customer presents.
-      - **Methods**:
-      - `GeneratePurchaseRequest()`: Generates a math problem (e.g., total cost, change, or discount).
-      - `ProvideFeedback()`: Gives feedback to the player based on their response (correct/incorrect).
+   - **Role**: Represents shopkeepers and customers in the marketplace.
+   - **Attributes**:
+   - `ShopType`: The type of shop (e.g. bakery, clothing store).
+   - `CustomerRequest`: The math problem or purchase request the customer presents.
+   - **Methods**:
+   - `GeneratePurchaseRequest()`: Generates a math problem (e.g., total cost, change, or discount).
+   - `ProvideFeedback()`: Gives feedback to the player based on their response (correct/incorrect).
 
    **2. `AMechanicNPC` (Shape Builder Mini-Game)**  
-      - **Role**: Represents the mechanic who provides geometry-based tasks.
-      - **Attributes**:
-      - `RequiredProperties`: Defines the geometric properties needed for the task (e.g., surface area, perimeter).
-      - `PuzzleDifficulty`: The difficulty level of the task.
-      - **Methods**:
-      - `ProvideComponentTask()`: Assigns a task to the player to find specific car components.
-      - `ValidateSelection()`: Checks if the player's selected components match the required properties.
+   - **Role**: Represents the mechanic who provides geometry-based tasks.
+   - **Attributes**:
+   - `RequiredProperties`: Defines the geometric properties needed for the task (e.g., surface area, perimeter).
+   - `PuzzleDifficulty`: The difficulty level of the task.
+   - **Methods**:
+   - `ProvideComponentTask()`: Assigns a task to the player to find specific car components.
+   - `ValidateSelection()`: Checks if the player's selected components match the required properties.
 
    **3. `APostOfficerNPC` (Delivery Dash Mini-Game)**
-      - **Role**: Represents the post officer or doctor who assigns delivery tasks.
-      - **Attributes**:
-      - `DeliveryLocation`: The destination for the delivery.
-      - `Clue`: The math-based clue the player must solve to find the delivery location.
-      - **Methods**:
-      - `AssignDeliveryTask()`: Assigns a delivery task with a math-based clue.
-      - `ConfirmDelivery()`: Validates if the player has delivered to the correct location.
+   - **Role**: Represents the post officer or doctor who assigns delivery tasks.
+   - **Attributes**:
+   - `DeliveryLocation`: The destination for the delivery.
+   - `Clue`: The math-based clue the player must solve to find the delivery location.
+   - **Methods**:
+   - `AssignDeliveryTask()`: Assigns a delivery task with a math-based clue.
+   - `ConfirmDelivery()`: Validates if the player has delivered to the correct location.
 
    **4. `AChefNPC` (Restaurant Rush Mini-Game)**
-      - **Role**: Represents the chef or customer who provides cooking tasks.
-      - **Attributes**:
-      - `Recipe`: The fraction-based recipe the player must follow.
-      - `PatienceTimer`: The time limit for completing the task.
-      - **Methods**:
-      - `ProvideRecipe()`: Gives the player a fraction-based recipe to follow.
-      - `ValidateDish()`: Checks if the player has prepared the dish correctly.
+   - **Role**: Represents the chef or customer who provides cooking tasks.
+   - **Attributes**:
+   - `Recipe`: The fraction-based recipe the player must follow.
+   - `PatienceTimer`: The time limit for completing the task.
+   - **Methods**:
+   - `ProvideRecipe()`: Gives the player a fraction-based recipe to follow.
+   - `ValidateDish()`: Checks if the player has prepared the dish correctly.
 
    **5. `ACoachNPC` (Math Hoops Mini-Game)**
-      - **Role**: Represents the coach or teammate who provides quick math challenges.
-      - **Attributes**:
-      - `MathProblem`: The quick math problem the player must solve.
-      - `DifficultyLevel`: The difficulty of the math problem (increases as the player progresses).
-      - **Methods**:
-      - `GenerateMathProblem()`: Generates a quick math problem for the player to solve.
-      - `ProvideShootingOpportunity()`: Allows the player to shoot a basket if they solve the problem correctly.
+   - **Role**: Represents the coach or teammate who provides quick math challenges.
+   - **Attributes**:
+   - `MathProblem`: The quick math problem the player must solve.
+   - `DifficultyLevel`: The difficulty of the math problem (increases as the player progresses).
+   - **Methods**:
+   - `GenerateMathProblem()`: Generates a quick math problem for the player to solve.
+   - `ProvideShootingOpportunity()`: Allows the player to shoot a basket if they solve the problem correctly.
 
 #### 🗺️ **World & Environment Management**
 - **`AMiniGameMap`**: Defines unique environments for each mini-game (Market, Garden, City, etc.).
