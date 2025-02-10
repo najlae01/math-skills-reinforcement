@@ -60,33 +60,35 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 ![Scene Reference Image](images/Mechanic.png)
 
 ### **Mechanic - 📏 Geometry Puzzle**
-**🕹️ Gameplay Mechanics**: 
-- 🎯 **Goal**: Construct shapes from pieces or match objects to geometric forms.
-- 🛒 **Scenarios**: Drag-and-drop puzzles, object matching.
 
-**🌍 World Setting & NPCs**:
-- 📍 **Location**: mechanic shop (machine parts).
-- 👥 **NPCs**: mechanic providing shape tasks.
+**🕹️ Gameplay Mechanics**:  
+- 🎯 **Goal**: Help the Mechanic NPC find the correct car components based on geometric properties like surface area, perimeter, and shape type.
+- 🛠️ **Scenarios**: Players choose from various components, analyzing their dimensions and properties to determine the correct fit.
+
+**🌍 World Setting & NPCs**:  
+- 📍 **Location**: Mechanic shop filled with machine parts and tools.
+- 👥 **NPCs**: Mechanic providing geometry-based tasks and feedback on player choices.
 
 **🎥 Camera Perspective & Movement**:
-- 👁️ **Perspective**: Top-down or isometric for clear puzzle visibility.
-- 🎯 **Movement**: Locked position, slight zoom in/out with player actions.
+- 👁️ **Perspective**: Third-person, slightly above the player.
+- 🎯 **Movement**: Follows the player smoothly, slight lag for a dynamic feel. 
 
-**🕹️ Player Controls & Actions**:
-- ✋ Drag and drop shapes.
-- 🔄 Rotate pieces as needed.
-- ✅ Confirm completed puzzles.
+**🕹️ Player Controls & Actions**:  
+- 🚶‍♂️ **Movement**: Joystick (mobile) / WASD (PC).
+- 👆 **Select Components**: Click to pick components from the Mechanic's shop inventory. 
+- 🔄 **Analyze**: Check component details like perimeter and surface area.
+- ✅ **Confirm Selection**: Submit the chosen components to the Mechanic for validation.
 
-**🎁 Rewards System**:
-- 🎯 **Completed puzzles**:  Coins, XP (GameLevel).
-- ⚡ **Quick, precise solutions**: Bonus Gems.
+**🎁 Rewards System**:  
+- 🎯 **Correct Selections**: Earn coins and XP based on accuracy.
+- ⚡ **Quick, Precise Solutions**: Bonus gems for solving tasks quickly without errors.
 
-**🛠️ Unreal Engine Development Directives**:
-- 🗝️ **Key Systems**:
-   - 🎯 **Drag-and-Drop System**: Physics-enabled for smooth interactions.
-   - 🧠 **Puzzle Validator**: Check correct shape formation.
-- 🖼️ **UI Components**: Shape inventory panel, rotation buttons.
-- 🎬**Animation**: Snap-to-place effects for satisfying completion.
+**🛠️ Unreal Engine Development Directives**:  
+- 🗝️ **Key Systems**:  
+   - 📏 **Geometry Analyzer**: Calculates surface area, perimeter, and other properties.
+   - 🧠 **Task Validator**: Checks if the selected components meet the Mechanic's requirements.
+- 🖼️ **UI Components**: Component inventory panel, analysis button, and submission confirmation.
+- 🎬 **Animation**: Highlight correct components with glowing effects upon selection.
 
 **🐈‍⬛ GitHub Branch**: `builder`
 
@@ -223,50 +225,51 @@ For a detailed explanation of the class structure, please refer to the diagram a
 - **`ANPC`** *(Base Class)*: Manages basic NPC behavior, dialogue, and interaction triggers, and is extended into specific NPC types for each mini-game.
 - **`UDialogueComponent`**: Handles dialogues and interactions between the player and NPCs.
 - **NPC Child Classes**:
-   **1. `AMarketNPC` (Market Math Mini-Game)**
-   - **Role**: Represents shopkeepers and customers in the marketplace.
-   - **Attributes**:
-   - `ShopType`: The type of shop (e.g. bakery, clothing store).
-   - `CustomerRequest`: The math problem or purchase request the customer presents.
-   - **Methods**:
-   - `GeneratePurchaseRequest()`: Generates a math problem (e.g., total cost, change, or discount).
-   - `ProvideFeedback()`: Gives feedback to the player based on their response (correct/incorrect).
 
-   **2. `AMechanicNPC` (Shape Builder Mini-Game)**
-   - **Role**: Represents the mechanic who provides shape-building tasks.
-   - **Attributes**:
-   - `ShapeType`: The type of shape the player needs to build (e.g., triangle, square, circle).
-   - `PuzzleDifficulty`: The difficulty level of the shape puzzle.
-   - **Methods**:
-   - `ProvideShapeTask()`: Gives the player a shape-building task.
-   - `ValidateShape()`: Checks if the player has correctly built the shape.
+   **1. `AMarketNPC` (Market Math Mini-Game)**
+      - **Role**: Represents shopkeepers and customers in the marketplace.
+      - **Attributes**:
+      - `ShopType`: The type of shop (e.g. bakery, clothing store).
+      - `CustomerRequest`: The math problem or purchase request the customer presents.
+      - **Methods**:
+      - `GeneratePurchaseRequest()`: Generates a math problem (e.g., total cost, change, or discount).
+      - `ProvideFeedback()`: Gives feedback to the player based on their response (correct/incorrect).
+
+   **2. `AMechanicNPC` (Shape Builder Mini-Game)**  
+      - **Role**: Represents the mechanic who provides geometry-based tasks.
+      - **Attributes**:
+      - `RequiredProperties`: Defines the geometric properties needed for the task (e.g., surface area, perimeter).
+      - `PuzzleDifficulty`: The difficulty level of the task.
+      - **Methods**:
+      - `ProvideComponentTask()`: Assigns a task to the player to find specific car components.
+      - `ValidateSelection()`: Checks if the player's selected components match the required properties.
 
    **3. `APostOfficerNPC` (Delivery Dash Mini-Game)**
-   - **Role**: Represents the post officer or doctor who assigns delivery tasks.
-   - **Attributes**:
-   - `DeliveryLocation`: The destination for the delivery.
-   - `Clue`: The math-based clue the player must solve to find the delivery location.
-   - **Methods**:
-   - `AssignDeliveryTask()`: Assigns a delivery task with a math-based clue.
-   - `ConfirmDelivery()`: Validates if the player has delivered to the correct location.
+      - **Role**: Represents the post officer or doctor who assigns delivery tasks.
+      - **Attributes**:
+      - `DeliveryLocation`: The destination for the delivery.
+      - `Clue`: The math-based clue the player must solve to find the delivery location.
+      - **Methods**:
+      - `AssignDeliveryTask()`: Assigns a delivery task with a math-based clue.
+      - `ConfirmDelivery()`: Validates if the player has delivered to the correct location.
 
    **4. `AChefNPC` (Restaurant Rush Mini-Game)**
-   - **Role**: Represents the chef or customer who provides cooking tasks.
-   - **Attributes**:
-   - `Recipe`: The fraction-based recipe the player must follow.
-   - `PatienceTimer`: The time limit for completing the task.
-   - **Methods**:
-   - `ProvideRecipe()`: Gives the player a fraction-based recipe to follow.
-   - `ValidateDish()`: Checks if the player has prepared the dish correctly.
+      - **Role**: Represents the chef or customer who provides cooking tasks.
+      - **Attributes**:
+      - `Recipe`: The fraction-based recipe the player must follow.
+      - `PatienceTimer`: The time limit for completing the task.
+      - **Methods**:
+      - `ProvideRecipe()`: Gives the player a fraction-based recipe to follow.
+      - `ValidateDish()`: Checks if the player has prepared the dish correctly.
 
    **5. `ACoachNPC` (Math Hoops Mini-Game)**
-   - **Role**: Represents the coach or teammate who provides quick math challenges.
-   - **Attributes**:
-   - `MathProblem`: The quick math problem the player must solve.
-   - `DifficultyLevel`: The difficulty of the math problem (increases as the player progresses).
-   - **Methods**:
-   - `GenerateMathProblem()`: Generates a quick math problem for the player to solve.
-   - `ProvideShootingOpportunity()`: Allows the player to shoot a basket if they solve the problem correctly.
+      - **Role**: Represents the coach or teammate who provides quick math challenges.
+      - **Attributes**:
+      - `MathProblem`: The quick math problem the player must solve.
+      - `DifficultyLevel`: The difficulty of the math problem (increases as the player progresses).
+      - **Methods**:
+      - `GenerateMathProblem()`: Generates a quick math problem for the player to solve.
+      - `ProvideShootingOpportunity()`: Allows the player to shoot a basket if they solve the problem correctly.
 
 #### 🗺️ **World & Environment Management**
 - **`AMiniGameMap`**: Defines unique environments for each mini-game (Market, Garden, City, etc.).
