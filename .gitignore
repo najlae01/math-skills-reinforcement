@@ -60,18 +60,18 @@ Plugins/Firebase8d7bcf9a30e9V11
 
 
 # math-skills-reinforcement - remote: reinforce - restaurant
-# Content/BlueprintCore/City
-# Content/Maps/math-skills-Reinforcement/Builder
-# Content/Maps/math-skills-Reinforcement/Delivery
-# Content/Maps/math-skills-Reinforcement/Hoops
-# Content/Maps/math-skills-Reinforcement/Market
+Content/BlueprintCore/City
+Content/Maps/math-skills-Reinforcement/Builder
+Content/Maps/math-skills-Reinforcement/Delivery
+Content/Maps/math-skills-Reinforcement/Hoops
+Content/Maps/math-skills-Reinforcement/Market
 
-# Content/Assets/City/Exterior
+Content/Assets/City/Exterior
 
-# Content/Assets/City/Interior/Hospital
-# Content/Assets/City/Interior/Market
-# Content/Assets/City/Interior/Police
-# Content/Assets/City/Interior/Mechanic
+Content/Assets/City/Interior/Hospital
+Content/Assets/City/Interior/Market
+Content/Assets/City/Interior/Police
+Content/Assets/City/Interior/Mechanic
 
 
 # # math-skills-reinforcement - remote: reinforce - delivery
