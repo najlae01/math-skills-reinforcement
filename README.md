@@ -7,11 +7,11 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 1. [Market Math](#market-math)
 2. [Shape Builder](#shape-builder)
 3. [Delivery Dash](#delivery-dash)
-4. [Restaurant Rush](#restaurant-rush)
-5. [Math Hoops](#math-hoops)
-6. [System Components](#system-components)
-7. [Installation Instructions](#installation-instructions)
-8. [Teacher Dashboard Integration](#teacher-dashboard-integration)
+4. [Math Hoops](#math-hoops)
+5. [System Components](#system-components)
+6. [Installation Instructions](#installation-instructions)
+7. [Teacher Dashboard Integration](#teacher-dashboard-integration)
+8. [Important Update](#important-update)
 9. [Contributing](#contributing)
 10. [Contact](#contact)
 
@@ -130,45 +130,6 @@ Welcome to **Math Reinforcement Mini Games**, an engaging suite of mini-games de
 
 ---
 
-## Restaurant Rush
-
-![Restaurant Scene Reference Image](images/Restaurant.png)
-![Coffee Scene Reference Image](images/Coffee.png)
-
-### **Restaurant / Coffee Shop - 🍕 Fractions & Decimals**
-**🕹️ Gameplay Mechanics**: 
-- 🎯 **Goal**: Prepare and serve food based on fraction-based recipes.
-- 🛒 **Scenarios**: Measure ingredients, serve customers quickly.
-
-**🌍 World Setting & NPCs**:
-- 📍 **Location**: Cozy restaurant or bustling coffee shop.
-- 👥 **NPCs**: Customers with specific food orders, chef giving instructions.
-
-**🎥 Camera Perspective & Movement**:
-- 👁️ **Perspective**: Third-person, slightly above kitchen view.
-- 🎯 **Movement**: Semi-locked with slight pan to follow player within kitchen.
-
-**🕹️ Player Controls & Actions**:
-- 🍳 Select ingredients.
-- ✂️ Drag to pour/cut portions.
-- ✅ Serve dishes before customer patience runs out.
-
-**🎁 Rewards System**:
-- 📦 **Accurate servings**:  Coins, XP (GameLevel).
-- ⚡ **Fast service**: Bonus Gems.
-
-**🛠️ Unreal Engine Development Directives**:
-- 🗝️ **Key Systems**:
-   - 🥗 **Ingredient System**: Interactive objects with quantity tracking.
-   - ⏱️ **Customer Patience Timer**: Affects rewards based on service speed.
-   - 📏 **Recipe Validator**: C++ logic to check correct portions.
-- 🖼️ **UI Components**: Recipe book, fraction sliders.
-- 🎬**Animation**: Pouring effects, cooking animations.
-
-**🐈‍⬛ GitHub Branch**: `restaurant`
-
----
-
 ## Math Hoops
 
 ### **Basketball Court - 🏀 Quick Calculations (already in development as part of the course demonstration)**
@@ -253,16 +214,7 @@ For a detailed explanation of the class structure, please refer to the diagram a
    - `AssignDeliveryTask()`: Assigns a delivery task with a math-based clue.
    - `ConfirmDelivery()`: Validates if the player has delivered to the correct location.
 
-   **4. `AChefNPC` (Restaurant Rush Mini-Game)**
-   - **Role**: Represents the chef or customer who provides cooking tasks.
-   - **Attributes**:
-   - `Recipe`: The fraction-based recipe the player must follow.
-   - `PatienceTimer`: The time limit for completing the task.
-   - **Methods**:
-   - `ProvideRecipe()`: Gives the player a fraction-based recipe to follow.
-   - `ValidateDish()`: Checks if the player has prepared the dish correctly.
-
-   **5. `ACoachNPC` (Math Hoops Mini-Game)**
+   **4. `ACoachNPC` (Math Hoops Mini-Game)**
    - **Role**: Represents the coach or teammate who provides quick math challenges.
    - **Attributes**:
    - `MathProblem`: The quick math problem the player must solve.
@@ -285,7 +237,6 @@ For a detailed explanation of the class structure, please refer to the diagram a
 - **`AMarketMathController`**: Handles logic for the Market Math mini-game, including transactions and currency management.
 - **`AShapeBuilderController`**: Manages shape construction mechanics and puzzle validation.
 - **`ADeliveryDashController`**: Controls delivery missions, vehicle navigation, and clue decoding.
-- **`ARestaurantRushController`**: Oversees cooking mechanics, ingredient measurements, and order validation.
 - **`AMathHoopsController`**: Manages quick calculation challenges, shooting mechanics, and combo scoring.
 
 #### 🏆 **Rewards & Progression Systems**
@@ -310,6 +261,15 @@ For a detailed explanation of the class structure, please refer to the diagram a
 - **Real-Time Monitoring of Student Performance**: Track student performance in real-time while they are engaging with the mini-games.
 - **Analytics & Reports**: Teachers have access to detailed analytics, showing student progress, areas of strength, and areas for improvement. Reports can be generated based on student performance, helping educators adjust teaching strategies as needed.
 - **Link to GitHub Repo**: [GitHub Repository for Teacher Dashboard](https://github.com/najlae01/math-web.git)
+
+---
+
+## Important Update 
+We are making a key change to how students/players create and access their game accounts. Going forward, students will not be able to create accounts themselves—only teachers or school administrators can do so.
+
+To streamline this process, we are removing the in-game authentication form. Instead, students will log in using a QR code provided by their teacher upon account creation.
+
+In the future, we plan to introduce fingerprint authentication as an option for compatible devices.
 
 ---
 
