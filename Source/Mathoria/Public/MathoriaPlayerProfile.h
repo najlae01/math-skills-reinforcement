@@ -78,9 +78,6 @@ public:
 
 	// TEST
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Test")
-	bool IsAuthenticatedByTeacher;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Test")
 	FString LinkedTeacherID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Test", Replicated)
